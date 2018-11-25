@@ -1,0 +1,28 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Made with Thimble</title>
+        <link rel="stylesheet" href="/q1/correct/correct.css">
+      </head>
+      <body>
+            <video autoplay muted loop id="myVideo">
+                    <source src="/q1/naturalis.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+          <center>
+                <h1>Correct</h1>
+                <img src="/q1/correct/correct.png" style="height: 100px">
+                <div id="reply">
+                    <p>Good Job. The global emission of carbon dioxide increases by 0.5% every year, and the rate keeps increasing. From 1960 to 1990 the Carbon dioxide level has increased by 11%. However recent technological advance is solar technology and fuel ceel technology seek to reduce this increase in emission.</p>
+                </div>
+                <button onclick="next()">Next</button>
+                <script>
+                    function next() {
+                        window.location.href="/q6/question.html";
+                        var m = sessionStorage.getItem("score");
+                        var p = m + 1;
+                        sessionStorage.setItem("score", p);
+                    }
+                </script>
+          </center>
+      </body>

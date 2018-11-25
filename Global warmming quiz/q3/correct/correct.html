@@ -1,0 +1,28 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Made with Thimble</title>
+        <link rel="stylesheet" href="/q1/correct/correct.css">
+      </head>
+      <body>
+            <video autoplay muted loop id="myVideo">
+                    <source src="/q1/naturalis.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+          <center>
+                <h1>Correct</h1>
+                <img src="/q1/correct/correct.png" style="height: 100px">
+                <div id="reply">
+                    <p>China is the largest producer of green house gasses. It is responsible for releasing some 12, 454, 000 killotonnes of CO2 gas every year. A majority of gases emited comes from China 's growing industrial sector, and the increase in energy use amongst individual chinese citizens.</p>
+                </div>
+                <button onclick="next()">Next</button>
+                <script>
+                    function next() {
+                        window.location.href="/q4/question.html";
+                        var m = sessionStorage.getItem("score");
+                        var p = m + 1;
+                        sessionStorage.setItem("score", p);
+                    }
+                </script>
+          </center>
+      </body>

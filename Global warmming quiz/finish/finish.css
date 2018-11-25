@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+#continer {
+   margin-top: 20vh;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.404);
+   width: 20em;
+}
+h1 {
+    font-size: 6em;
+    margin-top: -30px;
+}
+h2 {
+    padding: 30px;
+    margin-top: -50px;
+}
+#end {
+    border-bottom: 2px solid white;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: -3em;
+    padding: 30px;
+}

@@ -1,0 +1,28 @@
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Made with Thimble</title>
+        <link rel="stylesheet" href="correct.css">
+      </head>
+      <body>
+            <video autoplay muted loop id="myVideo">
+                    <source src="/q1/naturalis.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+          <center>
+                <h1>Correct</h1>
+                <img src="correct.png" style="height: 100px">
+                <div id="reply">
+                    <p>Green house gasses are gasses that allow light energy to pass through but they reradiates heat energy back to the earth. Some example of greenhouse gases are Methane, Nitrous oxide, and chlorofluorocarbons.</p>
+                </div>
+                <button onclick="next()">Next</button>
+                <script>
+                    function next() {
+                        window.location.href="/q2/question.html";
+                        var m = sessionStorage.getItem("score");
+                        var p = m + 1;
+                        sessionStorage.setItem("score", p);
+                    }
+                </script>
+          </center>
+      </body>
